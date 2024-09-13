@@ -1,7 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
-	fmt.Println("Hello, world!!!")
+	var a, b float64
+	fmt.Scan(&a)
+	fmt.Scan(&b)
+	ans := math.Sqrt(a*a + b*b)
+	fmt.Print(ans)
 }
